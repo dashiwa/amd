@@ -1,0 +1,9 @@
+uuid: e62001e1-8050-4d46-843b-d4857b7fe0cc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Medical centre'
+vid: medical_centre
+description: ''
+hierarchy: 0
+weight: 0

@@ -5,9 +5,13 @@ dependencies:
   config:
     - field.field.node.doctor.body
     - field.field.node.doctor.field_last_name
+    - field.field.node.doctor.field_medcentr
     - field.field.node.doctor.field_name
+    - field.field.node.doctor.field_photo
+    - image.style.thumbnail
     - node.type.doctor
   module:
+    - image
     - path
     - text
 id: node.doctor.default
@@ -38,6 +42,15 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_medcentr:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_name:
     weight: 122
     settings:
@@ -45,6 +58,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_photo:
+    weight: 124
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   path:
     type: path
