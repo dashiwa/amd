@@ -1,0 +1,30 @@
+uuid: a55f549e-f5c3-4e11-89ee-b297b53483aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.patient.body
+    - node.type.patient
+  module:
+    - text
+    - user
+id: node.patient.teaser
+targetEntityType: node
+bundle: patient
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

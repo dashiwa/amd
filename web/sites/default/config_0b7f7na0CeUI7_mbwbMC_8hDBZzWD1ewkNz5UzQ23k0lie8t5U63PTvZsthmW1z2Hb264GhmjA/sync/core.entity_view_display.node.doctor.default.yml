@@ -1,0 +1,46 @@
+uuid: 908837df-fdce-4403-9da9-43ed3d93899d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.doctor.body
+    - field.field.node.doctor.field_last_name
+    - field.field.node.doctor.field_name
+    - node.type.doctor
+  module:
+    - text
+    - user
+id: node.doctor.default
+targetEntityType: node
+bundle: doctor
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_last_name:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

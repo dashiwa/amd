@@ -1,0 +1,21 @@
+uuid: 20af8239-0055-4d6b-9611-1152ce847b4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.event
+  module:
+    - text
+id: node.event.field_category
+field_name: field_category
+entity_type: node
+bundle: event
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

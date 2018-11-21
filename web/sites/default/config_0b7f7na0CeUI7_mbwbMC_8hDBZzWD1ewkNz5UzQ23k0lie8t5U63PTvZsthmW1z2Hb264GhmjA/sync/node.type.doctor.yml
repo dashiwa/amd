@@ -1,0 +1,18 @@
+uuid: 382f2186-7dd9-4207-93ca-77f8d938cb70
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Doctor
+type: doctor
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
